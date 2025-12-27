@@ -1,0 +1,74 @@
+"use client"
+
+import { Star } from "lucide-react"
+import { Button } from "@/components/ui/button"
+import { Badge } from "@/components/ui/badge"
+import { motion } from "framer-motion"
+
+interface HeroProps {
+  data: {
+    name: string
+    subtitle: string
+    description: string
+    originalPrice?: number
+    checkoutUrl: string
+    trustBadge: string
+  }
+}
+
+export function Hero({ data }: HeroProps) {
+  const handleBuyClick = () => {
+    window.open(data.checkoutUrl, "_blank", "noopener,noreferrer")
+  }
+
+  return (
+    <section className="py-20 lg:py-32 bg-gradient-to-b from-white via-cyan-50 to-sky-100 ">
+      <div className="container mx-auto px-4">
+        <div className="grid lg:grid-cols-2 gap-12 items-center"> 
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="space-y-6 "
+          >
+            <Badge className="bg-brand/10 text-brand hover:bg-brand/20 border-brand/20">{data.trustBadge}</Badge>
+
+            <h1 className="text-4xl lg:text-6xl font-bold text-balance leading-tight">{data.name}</h1>
+
+            <p className="text-xl text-muted-foreground text-pretty">{data.subtitle}</p>
+
+            <p className="text-base text-muted-foreground">{data.description}</p>
+
+          
+
+            <div className="flex flex-col sm:flex-row gap-3 pt-4">
+              <Button
+                size="lg"
+                className="bg-brand text-brand-foreground hover:bg-brand/90 text-base font-semibold"
+                onClick={handleBuyClick}
+              >
+                Comprar Agora
+              </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                onClick={() => document.getElementById("benefits")?.scrollIntoView({ behavior: "smooth" })}
+              >
+                Ver Detalhes
+              </Button>
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="relative aspect-square rounded-2xl overflow-hidden"
+          >
+            <img src="/productUnit.png" alt={data.name} className="w-full h-full object-contain" />
+          </motion.div>
+        </div>
+      </div>
+    </section>
+  )
+}
