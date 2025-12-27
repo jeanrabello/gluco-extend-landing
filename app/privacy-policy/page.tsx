@@ -23,7 +23,7 @@ export default function PrivacyPolicyPage() {
           {/* Privacy Policy */}
           <section>
             <h1 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-2">PRIVACY POLICY</h1>
-            <p className="text-slate-500 mb-8">Last updated: [fill in date]</p>
+            <p className="text-slate-500 mb-8">Last updated: December 27, 2025</p>
 
             <div className="prose prose-slate max-w-none">
               <p>

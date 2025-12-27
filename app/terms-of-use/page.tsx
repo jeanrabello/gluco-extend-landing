@@ -21,7 +21,7 @@ export default function TermsOfUsePage() {
       <main className="container mx-auto px-4 py-12">
         <div className="max-w-4xl mx-auto bg-white rounded-2xl shadow-sm p-8 lg:p-12">
           <h1 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-2">TERMS OF USE</h1>
-          <p className="text-slate-500 mb-8">Last updated: [fill in date]</p>
+          <p className="text-slate-500 mb-8">Last updated: December 27, 2025</p>
 
           <div className="prose prose-slate max-w-none">
             <p>
