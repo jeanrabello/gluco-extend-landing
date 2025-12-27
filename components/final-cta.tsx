@@ -18,7 +18,7 @@ export function FinalCTA({ data }: FinalCTAProps) {
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
   const handleBuyClick = () => {
-    window.open(data.checkoutUrl, "_blank", "noopener,noreferrer")
+    document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" })
   }
 
   return (
@@ -32,13 +32,13 @@ export function FinalCTA({ data }: FinalCTAProps) {
           className="max-w-3xl mx-auto text-center space-y-8"
         >
           <Badge className="bg-white/20 text-white hover:bg-white/30">
-            Oferta por Tempo Limitado
+            Limited Time Offer
           </Badge>
 
-          <h2 className="text-3xl lg:text-5xl font-bold text-balance">Pronto Para Transformar Sua Rotina?</h2>
+          <h2 className="text-3xl lg:text-5xl font-bold text-balance">Ready to Transform Your Routine?</h2>
 
           <p className="text-lg text-white/90 text-pretty">
-            Junte-se a milhares de pessoas que já estão vivendo melhor com o {data.name}
+            Join thousands of people who are already living better with {data.name}
           </p>
 
           <div className="flex flex-col items-center gap-4">
@@ -47,10 +47,10 @@ export function FinalCTA({ data }: FinalCTAProps) {
               className="bg-white text-cyan-700 hover:bg-white/90 text-base font-semibold"
               onClick={handleBuyClick}
             >
-              Garantir Meu Kit Agora
+              Get My Kit Now
             </Button>
             <p className="text-sm text-white/80">
-              ✓ Garantia de 7 dias • ✓ Frete grátis • ✓ Suporte dedicado
+              ✓ 180-day guarantee • ✓ Free shipping • ✓ Dedicated support
             </p>
           </div>
         </motion.div>

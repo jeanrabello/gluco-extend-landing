@@ -16,7 +16,7 @@
 
 import { Header } from "@/components/header"
 import { Hero } from "@/components/hero"
-import { Benefits } from "@/components/benefits"
+import { Ingredients } from "@/components/ingredients"
 import { HowItWorks } from "@/components/how-it-works"
 import { PricingPlans } from "@/components/pricing-plans"
 import { Testimonials } from "@/components/testimonials"
@@ -34,36 +34,54 @@ export const productData = {
   checkoutUrl: "https://exemplo.com/checkout", // ALTERE AQUI
   trustBadge: "Free Shipping",
 
-  benefits: [
+  ingredients: [
     {
-      icon: "Sparkles",
-      title: "Resultados Visíveis",
-      description: "Sinta a diferença nos primeiros 7 dias de uso",
+      name: "Mormordica charantia",
+      benefits: [
+        "Helps maintain healthy blood sugar levels",
+        "Boosts your metabolism",
+        "Increases energy and reduces fatigue",
+      ],
     },
     {
-      icon: "Shield",
-      title: "100% Seguro",
-      description: "Produto testado e aprovado por especialistas",
+      name: "Cinnamomum cassia",
+      benefits: [
+        "Helps maintain healthy blood sugar levels",
+        "Boosts your metabolism",
+        "Increases energy and reduces fatigue",
+      ],
     },
     {
-      icon: "Heart",
-      title: "Bem-estar Total",
-      description: "Cuide de você com ingredientes selecionados",
+      name: "Deglycyrrhizinated Licorice",
+      benefits: [
+        "Helps maintain healthy blood sugar levels",
+        "Boosts your metabolism",
+        "Increases energy and reduces fatigue",
+      ],
     },
     {
-      icon: "Zap",
-      title: "Fácil de Usar",
-      description: "Integre facilmente à sua rotina diária",
+      name: "Gymnema sylvestre",
+      benefits: [
+        "Helps maintain healthy blood sugar levels",
+        "Boosts your metabolism",
+        "Increases energy and reduces fatigue",
+      ],
     },
     {
-      icon: "Award",
-      title: "Qualidade Premium",
-      description: "Padrão internacional de fabricação",
+      name: "Lagerstroemia speciosa",
+      benefits: [
+        "Helps maintain healthy blood sugar levels",
+        "Boosts your metabolism",
+        "Increases energy and reduces fatigue",
+      ],
     },
     {
-      icon: "Clock",
-      title: "Entrega Rápida",
-      description: "Receba em casa com segurança e agilidade",
+      name: "Morus spp.",
+      benefits: [
+        "Helps maintain healthy blood sugar levels",
+        "Boosts your metabolism",
+        "Increases energy and reduces fatigue",
+      ],
     },
   ],
 
@@ -132,58 +150,58 @@ export const productData = {
 
   testimonials: [
     {
-      name: "Maria Silva",
-      role: "Cliente verificada",
+      name: "Jason Thompson, 53 anos, Nova Iorque",
+      role: "Verified Purchase",
       content:
-        "Estou muito satisfeita com o resultado! Realmente faz diferença na minha rotina. Recomendo para quem está em busca de mais bem-estar.",
+        "My blood sugar is stable and I have amazing energy. This product beats everything else I've tried",
       rating: 5,
     },
     {
-      name: "João Santos",
-      role: "Cliente verificado",
+      name: "Mindy Winslow, 43, FL",
+      role: "Verified Purchase",
       content:
-        "Produto de excelente qualidade. A entrega foi rápida e o suporte é muito atencioso. Vale cada centavo investido.",
+        "I've tried everything there is try, but this was the most powerful product I've tried for blood sugar support and it works, thank you!",
       rating: 5,
     },
     {
-      name: "Ana Costa",
-      role: "Cliente verificada",
+      name: "Mark Winters, 46, WA",
+      role: "Verified Purchase",
       content:
-        "Comprei e não me arrependi. Chegou bem embalado e os resultados apareceram rápido. Já indiquei para várias amigas!",
+        "This is my go to supplement for my blood sugar support now, it's really incredible how I feel now",
       rating: 5,
     },
   ],
 
   faqs: [
     {
-      question: "Como funciona a entrega?",
+      question: "How does delivery work?",
       answer:
-        'Após clicar em "Comprar Agora", você será redirecionado para o site seguro do fornecedor onde finalizará a compra. A entrega é feita pelos Correios ou transportadora em até 7 dias úteis para todo Brasil.',
+        'After clicking "Buy Now," you will be redirected to the supplier\'s secure website to complete your purchase. Delivery is made via standard shipping within 5-7 business days.',
     },
     {
-      question: "O pagamento é seguro?",
+      question: "Is payment secure?",
       answer:
-        "Sim! Todo o processo de pagamento é realizado no ambiente seguro do fornecedor, com criptografia de dados e certificado SSL. Aceitamos cartão de crédito, PIX e boleto.",
+        "Yes! The entire payment process is carried out in the supplier's secure environment, with data encryption and SSL certificate. We accept credit cards and other payment methods.",
     },
     {
-      question: "Posso devolver se não gostar?",
+      question: "Can I return it if I don't like it?",
       answer:
-        "Claro! Você tem 7 dias de garantia. Se não ficar satisfeito, entre em contato com o suporte do fornecedor e solicite a devolução conforme o código de defesa do consumidor.",
+        "Absolutely! You have a 180-day money-back guarantee. If you're not satisfied, contact the supplier's support team to request a refund.",
     },
     {
-      question: "Como faço para usar o produto?",
+      question: "How do I use the product?",
       answer:
-        "O kit vem com um guia completo de uso em português. Além disso, você terá acesso ao suporte especializado para tirar qualquer dúvida.",
+        "The kit comes with a complete usage guide. Additionally, you will have access to specialized support to answer any questions.",
     },
     {
-      question: "Quanto tempo para ver resultados?",
+      question: "How long to see results?",
       answer:
-        "A maioria dos nossos clientes relata sentir diferença nos primeiros 7 dias de uso. Os resultados podem variar de pessoa para pessoa.",
+        "Most of our customers report feeling a difference within the first 7 days of use. Results may vary from person to person.",
     },
     {
-      question: "Qual o prazo de validade?",
+      question: "What is the expiration date?",
       answer:
-        "O produto tem validade de 24 meses a partir da data de fabricação. A data de validade vem impressa na embalagem.",
+        "The product has a shelf life of 24 months from the date of manufacture. The expiration date is printed on the packaging.",
     },
   ],
 }
@@ -193,8 +211,8 @@ export default function Page() {
     <div className="min-h-screen">
       <Header />
       <Hero data={productData} />
-      <Benefits benefits={productData.benefits} />
-      <HowItWorks steps={productData.steps} />
+      <HowItWorks />
+      <Ingredients ingredients={productData.ingredients} />
       <PricingPlans plans={productData.pricingPlans} />
       <Testimonials testimonials={productData.testimonials} />
       <FAQ faqs={productData.faqs} />

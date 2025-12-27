@@ -23,9 +23,9 @@ export function FAQ({ faqs }: FAQProps) {
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl lg:text-5xl font-bold mb-4 text-balance">Perguntas Frequentes</h2>
+            <h2 className="text-3xl lg:text-5xl font-bold mb-4 text-balance">Frequently Asked Questions</h2>
             <p className="text-lg text-muted-foreground text-pretty">
-              Tire suas dúvidas sobre o produto e o processo de compra
+              Get your questions answered about the product and the purchase process
             </p>
           </div>
 

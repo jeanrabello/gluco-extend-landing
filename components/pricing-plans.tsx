@@ -36,7 +36,7 @@ export function PricingPlans({ plans }: PricingPlansProps) {
   }
 
   return (
-    <section className="py-20 bg-gradient-to-tr from-white via-sky-50 to-cyan-50">
+    <section id="pricing" className="py-20 bg-gradient-to-tr from-white via-sky-50 to-cyan-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-5xl font-bold mb-4 text-balance">Choose Your Package</h2>
@@ -76,6 +76,25 @@ export function PricingPlans({ plans }: PricingPlansProps) {
                   </div>
                 )}
 
+                {/* Tags flutuantes */}
+                <div className="absolute top-1/2 -right-2 rotate-12 z-10">
+                  <Badge className={`px-3 py-1 text-xs font-bold shadow-lg ${
+                    plan.freeShipping
+                      ? "bg-blue-900 text-white hover:bg-blue-900"
+                      : "bg-amber-400 text-slate-800 hover:bg-amber-400"
+                  }`}>
+                    {plan.freeShipping ? "FREE SHIPPING" : "+ SHIPPING"}
+                  </Badge>
+                </div>
+
+                {plan.bonuses > 0 && (
+                  <div className="absolute top-[58%] -right-1 rotate-6 z-10">
+                    <Badge className="bg-red-500 text-white px-3 py-1 text-xs font-bold shadow-lg hover:bg-red-500">
+                      +{plan.bonuses} FREE BONUSES
+                    </Badge>
+                  </div>
+                )}
+
                 <CardContent className="flex flex-col flex-1 p-6 pt-8">
                   {/* Header */}
                   <div className="text-center mb-4">
@@ -100,24 +119,6 @@ export function PricingPlans({ plans }: PricingPlansProps) {
                       <span className="text-5xl font-bold text-slate-900">${plan.pricePerBottle}</span>
                       <span className="text-sm text-slate-500">Per<br />Bottle</span>
                     </div>
-                  </div>
-
-                  {/* Badges de benefícios */}
-                  <div className="flex flex-col gap-2 mb-4">
-                    <div
-                      className={`text-center py-2 px-4 rounded text-sm font-semibold ${
-                        plan.freeShipping
-                          ? "bg-blue-900 text-white"
-                          : "bg-amber-400 text-slate-800"
-                      }`}
-                    >
-                      {plan.freeShipping ? "+ Free Shipping" : "+ Shipping"}
-                    </div>
-                    {plan.bonuses > 0 && (
-                      <div className="text-center py-2 px-4 rounded text-sm font-semibold bg-red-400 text-white">
-                        + {plan.bonuses} Free Bonuses
-                      </div>
-                    )}
                   </div>
 
                   {/* Botão de compra */}

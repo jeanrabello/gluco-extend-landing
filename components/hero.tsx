@@ -39,9 +39,9 @@ export function Hero({ data }: HeroProps) {
               text-center lg:text-left"
           >
             <Badge className="bg-brand/10 text-brand hover:bg-brand/20 border-brand/20">{data.trustBadge}</Badge>
-
-            <h1 className="text-4xl lg:text-6xl font-bold text-balance leading-tight">{data.name}</h1>
-
+          <div className="text-center">
+            <h1 className="text-4xl lg:text-6xl font-bold tracking-wide text-balance leading-tight  [text-shadow:2px_2px_0_oklch(0.42_0.18_25),-2px_-2px_0_oklch(0.42_0.18_25),2px_-2px_0_oklch(0.42_0.18_25),-2px_2px_0_oklch(0.42_0.18_25)]">{data.name}</h1>
+          </div>
             <p className="text-3xl font-bold text-[oklch(0.42_0.18_25)] text-pretty">{data.subtitle}</p>
 
             <p className="text-base text-black max-w-xl leading-relaxed">{data.description}</p>
@@ -53,9 +53,9 @@ export function Hero({ data }: HeroProps) {
               className= "bg-brand text-brand-foreground hover:bg-brand/90 text-base font-semibold cursor-pointer"
                 size="lg"
                 variant="outline"
-                onClick={() => document.getElementById("benefits")?.scrollIntoView({ behavior: "smooth" })}
+                onClick={() => document.getElementById("ingredients")?.scrollIntoView({ behavior: "smooth" })}
               >
-                Ver Detalhes
+                See Details
               </Button>
             </div>
           </motion.div>

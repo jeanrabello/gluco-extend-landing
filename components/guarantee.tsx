@@ -27,10 +27,10 @@ export function Guarantee() {
                   <div className="h-12 w-12 rounded-lg bg-brand/10 flex items-center justify-center">
                     <Shield className="h-6 w-6 text-brand" />
                   </div>
-                  <h3 className="text-2xl font-bold">Garantia de Satisfação</h3>
+                  <h3 className="text-2xl font-bold">Satisfaction Guarantee</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Se você não ficar completamente satisfeito com o Kit Pro Saúde, devolvemos 100% do seu dinheiro em
-                    até 7 dias após o recebimento. Sem perguntas, sem complicações.
+                    If you're not completely satisfied with Gluco Extend, we'll refund 100% of your money within
+                    180 days of receipt. No questions asked, no hassle.
                   </p>
                 </div>
 
@@ -38,10 +38,10 @@ export function Guarantee() {
                   <div className="h-12 w-12 rounded-lg bg-brand/10 flex items-center justify-center">
                     <Lock className="h-6 w-6 text-brand" />
                   </div>
-                  <h3 className="text-2xl font-bold">Compra 100% Segura</h3>
+                  <h3 className="text-2xl font-bold">100% Secure Purchase</h3>
                   <p className="text-muted-foreground leading-relaxed">
-                    Todo o processo de pagamento acontece no ambiente seguro do fornecedor, com criptografia SSL e
-                    certificado de segurança. Seus dados estão protegidos.
+                    The entire payment process takes place in the supplier's secure environment, with SSL encryption
+                    and security certificate. Your data is protected.
                   </p>
                 </div>
               </div>
