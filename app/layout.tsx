@@ -8,10 +8,9 @@ const _geist = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Gluco Extend - Transforme Sua Rotina de Bem-Estar",
+  title: "Gluco Extend - Transform Your Wellness Routine",
   description:
-    "Kit completo para quem busca mais qualidade de vida. Garantia de 7 dias, entrega rápida e suporte especializado.",
-  generator: "v0.app",
+    "Natural supplement with 11 clinically-proven ingredients for healthy blood sugar support. 180-day money-back guarantee, free shipping.",
   icons: {
     icon: [
       {
