@@ -114,7 +114,7 @@ export const productData = {
       finalTotal: 158,
       freeShipping: false,
       bonuses: 0,
-      checkoutUrl: "https://orders.clickbank.net/?cbfid=57386&cbitems=glucoextend2&corid=c1e684a1-38fd-40cf-b554-0543a30e36f7&exitoffer=1btl&oaref=01.A194B520AF98E970CAF57691FC48B1768F26FDF509E825235C7DD7558D4CE9588CD3EA7A&template=2btlv4&time=1766866511&vvvv=glucofix&vvar=__hostname%3Dglucoextend.com%26__page_id%3D11%26__page_version%3Db%26__user_id%3D5bc3b688acad18049b6addbfd7df4775%26cbexit%3D1btl%26cbfid%3D57386%26cbitems%3Dglucoextend2%26template%3D2btlv4",
+      checkoutUrl: "https://86d908wkldbr3s21qtolv31oe1.hop.clickbank.net/?&traffic_source=google&traffic_type=search&campaign=glucoextend_search_us&creative=headline_1&ad=ad_1&extclid={gclid}",
       image: "/product2.png",
     },
     {
@@ -128,7 +128,7 @@ export const productData = {
       freeShipping: true,
       bonuses: 2,
       badge: "most-popular" as const,
-      checkoutUrl: "https://orders.clickbank.net/?cbfid=57386&cbitems=glucoextend3&corid=4fd0f4b8-334c-45fa-819d-3b11746305d2&exitoffer=1btl&oaref=01.A194B520AF98E970CAF57691FC48B1768F26FDF509E825235C7DD7558D4CE9588CD3EA7A&template=3btlv5&time=1766866554&vvvv=glucofix&vvar=__hostname%3Dglucoextend.com%26__page_id%3D11%26__page_version%3Db%26__user_id%3D5bc3b688acad18049b6addbfd7df4775%26cbexit%3D1btl%26cbfid%3D57386%26cbitems%3Dglucoextend3%26template%3D3btlv5",
+      checkoutUrl: "https://86d908wkldbr3s21qtolv31oe1.hop.clickbank.net/?&traffic_source=google&traffic_type=search&campaign=glucoextend_search_us&creative=headline_1&ad=ad_1&extclid={gclid}",
       image: "/productCombo2.png",
     },
     {
@@ -143,7 +143,7 @@ export const productData = {
       bonuses: 2,
       badge: "best-value" as const,
       highlighted: true,
-      checkoutUrl: "https://orders.clickbank.net/?cbfid=57386&cbitems=glucoextend6&corid=bb65f5aa-a35e-4f66-9c2b-58c29243810d&exitoffer=1btl&oaref=01.A194B520AF98E970CAF57691FC48B1768F26FDF509E825235C7DD7558D4CE9588CD3EA7A&template=6btlv3&time=1766866533&vvvv=glucofix&vvar=__hostname%3Dglucoextend.com%26__page_id%3D11%26__page_version%3Db%26__user_id%3D5bc3b688acad18049b6addbfd7df4775%26cbexit%3D1btl%26cbfid%3D57386%26cbitems%3Dglucoextend6%26template%3D6btlv3",
+      checkoutUrl: "https://86d908wkldbr3s21qtolv31oe1.hop.clickbank.net/?&traffic_source=google&traffic_type=search&campaign=glucoextend_search_us&creative=headline_1&ad=ad_1&extclid={gclid}",
       image: "/productCombo3.png",
     },
   ],
