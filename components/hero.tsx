@@ -29,27 +29,28 @@ export function Hero({ data }: HeroProps) {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="space-y-6 "
+            className="    space-y-9
+              bg-white/60
+              border
+              border-brand/30
+              rounded-2xl
+              p-10
+              shadow-sm
+              text-center lg:text-left"
           >
             <Badge className="bg-brand/10 text-brand hover:bg-brand/20 border-brand/20">{data.trustBadge}</Badge>
 
             <h1 className="text-4xl lg:text-6xl font-bold text-balance leading-tight">{data.name}</h1>
 
-            <p className="text-xl text-muted-foreground text-pretty">{data.subtitle}</p>
+            <p className="text-3xl font-bold text-[oklch(0.42_0.18_25)] text-pretty">{data.subtitle}</p>
 
-            <p className="text-base text-muted-foreground">{data.description}</p>
+            <p className="text-base text-black max-w-xl leading-relaxed">{data.description}</p>
 
           
 
-            <div className="flex flex-col sm:flex-row gap-3 pt-4">
+            <div className="flex flex-col sm:flex-row gap-3 pt-5 justify-end">
               <Button
-                size="lg"
-                className="bg-brand text-brand-foreground hover:bg-brand/90 text-base font-semibold"
-                onClick={handleBuyClick}
-              >
-                Comprar Agora
-              </Button>
-              <Button
+              className= "bg-brand text-brand-foreground hover:bg-brand/90 text-base font-semibold cursor-pointer"
                 size="lg"
                 variant="outline"
                 onClick={() => document.getElementById("benefits")?.scrollIntoView({ behavior: "smooth" })}
