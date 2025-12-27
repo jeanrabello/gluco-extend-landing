@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   title: "Gluco Extend - Transform Your Wellness Routine",
   description:
     "Natural supplement with 11 clinically-proven ingredients for healthy blood sugar support. 180-day money-back guarantee, free shipping.",
+  openGraph: {
+    images: ["/productUnit.png"],
+  },
   icons: {
     icon: [
       {
