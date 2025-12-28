@@ -108,7 +108,7 @@ export function PricingPlans({ plans }: PricingPlansProps) {
                   <div className="relative h-40 mb-4 flex items-center justify-center">
                     <img
                       src={plan.image}
-                      alt={plan.name}
+                      alt={`Gluco Extend ${plan.supply} - ${plan.bottles} bottle${plan.bottles > 1 ? 's' : ''}`}
                       className="h-full object-contain"
                     />
                   </div>
